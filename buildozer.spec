@@ -27,6 +27,7 @@ fullscreen = 0
 
 android.permissions = INTERNET,RECORD_AUDIO,VIBRATE,ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,CHANGE_WIFI_MULTICAST_STATE,WAKE_LOCK
 
+p4a.branch = v2024.01.21
 android.api = 34
 android.minapi = 24
 android.archs = arm64-v8a
