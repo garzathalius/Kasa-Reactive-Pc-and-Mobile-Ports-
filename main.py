@@ -141,3 +141,18 @@ class KasaReactiveApp(App):
 
 if __name__ == "__main__":
     KasaReactiveApp().run()
+
+import sys, traceback, os
+
+def _log_crash(exc_type, exc, tb):
+    text = "".join(traceback.format_exception(exc_type, exc, tb))
+    for path in ("/sdcard/Download/kasa_crash.txt",
+                 os.path.join(os.getcwd(), "kasa_crash.txt")):
+        try:
+            with open(path, "w") as f:
+                f.write(text)
+            break
+        except Exception:
+            pass
+
+sys.excepthook = _log_crash
