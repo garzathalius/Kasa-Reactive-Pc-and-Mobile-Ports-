@@ -15,7 +15,7 @@ version = 1.0.0
 # The audio FFT is hand-rolled in pure Python; the Kasa protocol is
 # implemented directly over a socket. This dodges all the cross-
 # compilation issues that the heavier dependency set was hitting.
-requirements = python3,kivy==2.3.1,pyjnius,plyer
+requirements = python3==3.11.5,hostpython3==3.11.5,kivy==2.3.1,pyjnius,plyer
 
 icon.filename = assets/icon.png
 
