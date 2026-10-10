@@ -19,7 +19,7 @@ requirements = python3==3.11.5,hostpython3==3.11.5,kivy==2.3.1,pyjnius,plyer
 
 icon.filename = assets/icon.png
 
-presplash.filename = assets/icon.png
+# presplash.filename = assets/icon.png
 presplash.color = #000000
 
 orientation = all
@@ -28,7 +28,7 @@ fullscreen = 0
 android.permissions = INTERNET,RECORD_AUDIO,VIBRATE,ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,CHANGE_WIFI_MULTICAST_STATE,WAKE_LOCK
 
 p4a.branch = v2024.01.21
-android.api = 34
+android.api = 33
 android.minapi = 24
 android.archs = arm64-v8a
 
